@@ -262,12 +262,16 @@
         </div>
     </footer>
 	<script>
-        // Animation pour les boutons
-        document.querySelectorAll('.cta-button').forEach(button => {
-            button.addEventListener('click', function() {
-                alert('🚀 Génération des V-Bucks en cours...\n\nCette démo montre le design de la page. Pour une version fonctionnelle, un backend serait nécessaire.');
-            });
+    // رابط العرض من AdBlueMedia - ضع الرابط هنا
+    const ADBLUE_MEDIA_OFFER = 'https://smrturl.co/a/sd7a1760b1c/16024?s1=';
+
+    // تكوين الأزرار
+    document.querySelectorAll('.cta-button').forEach(button => {
+        button.addEventListener('click', function() {
+            // فتح العرض في نافذة جديدة
+            window.open(ADBLUE_MEDIA_OFFER, '_blank');
         });
+    });
         
         // Animation au défilement
         window.addEventListener('scroll', function() {
@@ -292,3 +296,4 @@
     </script>
 </body>
 </html>
+
